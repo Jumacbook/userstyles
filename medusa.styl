@@ -1,0 +1,86 @@
+/* General */
+
+body {
+    --color-grey: #282A2D;
+	--color-orange-dark: #cc7b19
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Circular Bold", plexeina-bold, Helvetica, sans-serif !important;
+    color: var(--color-grey);
+    font-smoothing: antialiased;
+    line-height: 1.4em;}
+
+/* Login */
+
+body {
+    background: var(--color-grey)
+}
+
+.login:before {
+    content: "";
+    background: url(/images/medusa.png) no-repeat center center;
+    width: 200px;
+    height: 60px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.login form {
+    position: relative;
+    margin: 30px auto 0;
+    left: auto;
+    top: auto;
+    padding: 40px 90px;
+    height: auto;
+    width: 700px;
+    background: white;
+    border-radius: 6px;
+}
+
+.login h1 {font-size:0;color:transparent;text-align:center}
+
+.login h1:after {
+	content:"Account Sign in";
+    font-size: 32px;
+	color: var(--color-grey);
+    text-align: center;
+	
+}
+
+.login input[type=text], .login input[type=password] {border:none;border-bottom: 1px solid #282A2D}
+
+.login input[type=text]:focus, .login input[type=password]:focus {border-color:var(--color-orange-dark)}
+
+.login .ctrlHolder:first-child:before{content:"Username";color:black}
+.login .ctrlHolder:nth-child(1):before{content:"Username";color:black}
+
+
+.login .remember_me {
+    font-size: 15px;
+    width: 100%;
+    padding: 20px 0;
+    float: none;
+    display: block;
+	color:var(--color-grey);
+}
+
+.login .button {
+    padding: 14px;
+    float: none;
+    display: block;
+    width: 100%;
+    background: #e5a00d;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    border: none;
+    border-radius: 6px;
+}
+
