@@ -5,7 +5,8 @@
 @description    Medusa-Plex
 @author         Julien
 @license        MIT
-@include        medusa.directchezmoi.com
+@include         *
+@match           *://medusa.directchezmoi.com/*
 ==/UserStyle== */
 /* General */
 
