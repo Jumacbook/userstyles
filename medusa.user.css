@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Medusa-Plex
 @namespace      medusa-plex
-@version        0.2
+@version        0.2.1
 @description    Medusa-Plex
 @author         Julien
 @license        MIT
@@ -27,9 +27,10 @@
 	.login h1:after{content:"Account Sign in";font-size:32px;color:var(--color-grey-dark);text-align:center;}
 	.login input[type=text],.login input[type=password]{border:none;border-bottom:1px solid #282A2D;width: 100% !important;font-size: 15px;padding: 5px 10px !important;height: 36px;color:#51595e;}
 	.login input[type=text]:focus,.login input[type=password]:focus{border-color:var(--color-orange-dark)}
-  .login input[type=text]::placeholder,.login input[type=password]::placeholder {visibility:hidden !important}
-	.login form .ctrlHolder:nth-child(2):before{content:"Username";color:var(--color-grey-dark2);font-weight:bold}
-	.login form .ctrlHolder:nth-child(3):before{content:"Password";color:var(--color-grey-dark2);font-weight:bold}
+	.login input[type=text]::placeholder,.login input[type=password]::placeholder {visibility:hidden !important}
+	.login form .ctrlHolder:nth-child(2){margin-bottom: 8px}
+	.login form .ctrlHolder:nth-child(2):before{content:"Username";color:var(--color-grey-dark2);font-weight:bold;margin-bottom: 6px;display: block;}
+	.login form .ctrlHolder:nth-child(3):before{content:"Password";color:var(--color-grey-dark2);font-weight:bold;margin-bottom: 6px;display: block;}
 	.login .remember_me{font-size:14px;width:100%;padding:20px 0;float:none;display:block;color:var(--color-grey-dark2);font-weight:bold}
 	.login .button{padding:14px;float:none;display:block;width:100%;background:#e5a00d;color:white;font-weight:bold;font-size:18px;letter-spacing:-0.5px;border:none;border-radius:6px;}
 	.login h1:after{font-weight: bold;}
