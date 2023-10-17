@@ -11,14 +11,31 @@
 /* Imports */
     
 /* General */
-  body{
+  	
+	/* Body */
+	body{
       --color-grey-dark:#282A2D;
       --color-grey-dark2: #51595e;
       --color-orange-dark:#cc7b19;
-      font-family:Helvetica,sans-serif !important;
-    }
-  h1, h2, h3, h4, h5{font-family:Helvetica,sans-serif !important;color:var(--color-grey);font-smoothing:antialiased;line-height:1.4em;}
-
+      font-family:Helvetica,sans-serif !important;}
+  	
+	/* Titles */
+	h1, h2, h3, h4, h5{font-family:Helvetica,sans-serif !important;color:var(--color-grey);line-height:1.4em;}
+	h1.header, h2.header {font-family: "'Open Sans'";font-size: 20px;margin: 35px 0 5px;font-weight: bold;}
+	
+	/* Buttons Medusa */
+	input.btn-medusa {background-color: #e5a00d !important;background-image: none !important;color: #1f2326;margin: 15px 0 5px;border: none;padding: 8px 18px;border-radius: 4px;letter-spacing: 0.5px;text-shadow: none;font-weight: bold;}
+	
+	
+	/* NavBar */
+	.navbar {background: #00000099;border: none;margin: 8px;border-radius: 4px;}
+		
+		/* Logo */
+		a.navbar-brand .disconnected {display: none !important;}
+	
+	/* BackgroundImageShow */
+	.backstretch {top:0 !important}
+	
 /* Login */
 	body{background:var(--color-grey-dark)}
 	.login:before{content:"";background:url(/images/medusa.png) no-repeat center center;width:200px;height:60px;display:block;position:relative;margin:0 auto;}
@@ -36,3 +53,8 @@
 	.login h1:after{font-weight: bold;}
 }
 
+/* Config */
+
+	[id^="config-"] {border-bottom: 1px solid black;padding: 16px 10px 3px;}
+	[id^="config-"]:hover {background: rgba(0,0,0,.3);}
+	label.nextline-block {color: hsla(0,0%,100%,.45);}
